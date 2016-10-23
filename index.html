@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The chillest of monkeys</title>
+    <style type="text/css">
+      #bg {
+  			position:fixed;
+  			top:-50%;
+  			left:-50%;
+  			width:200%;
+  			height:200%;
+  		}
+  		#bg img {
+  			position:absolute;
+  			top:0;
+  			left:0;
+  			right:0;
+  			bottom:0;
+  			margin:auto;
+  			min-width:50%;
+  			min-height:50%;
+  		}
+	</style>
+  </head>
+  <body>
+    <div id="bg">
+      <img src="assets/images/monkey.gif" alt="Just chill." class="bg">
+    </div>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
