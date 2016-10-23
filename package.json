@@ -4,7 +4,8 @@
   "description": "The chillest of monkeys.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:osx": "rm -rf build/chillest-monkey-darwin-x64 && electron-packager . --platform=darwin --icon=assets/build/chillest-monkey-v2.icns --out=build"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -15,6 +16,7 @@
   "author": "Mike Buckley",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.1",
+    "electron-packager": "^8.1.0"
   }
 }
